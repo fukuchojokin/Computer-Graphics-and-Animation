@@ -6,7 +6,6 @@
 int main() {
     int gdriver = DETECT, gmode;
     int x, y, x1, y1, x2, y2, dx, dy, p, i, j;
-    // char data[] = "C:\\MinGW\\lib\\libbgi.a";
     printf("Enter x1,y1: ");
     scanf("%d,%d", &x1, &y1);
     printf("Enter x2,y2: ");

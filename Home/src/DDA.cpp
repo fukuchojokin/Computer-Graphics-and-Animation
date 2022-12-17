@@ -11,8 +11,6 @@ int main()
     scanf("%d,%d", &x1, &y1);
     printf("Enter x2,y2: ");
     scanf("%d,%d", &x2, &y2);
-    // char data[] = "C:\\MinGW\\lib\\libbgi.a";
-    // initgraph(&gdriver, &gmode, data);
     initgraph(&gdriver, &gmode, NULL);
     dx = x2 - x1;
     dy = y2 - y1;
