@@ -5,24 +5,19 @@
 #include <graphics.h>
 
 void plots(int x, int y, int x1, int y1) {
-    putpixel(x + x1, y + y1, YELLOW);
-    putpixel(x + x1, y - y1, YELLOW);
-    putpixel(x + x1, y - y1, YELLOW);
-    putpixel(x - x1, y - y1, YELLOW);
-    putpixel(x + y1, y + x1, YELLOW);
-    putpixel(x - y1, y + x1, YELLOW);
-    putpixel(x + y1, y - x1, YELLOW);
-    putpixel(x - y1, y - x1, YELLOW);
+    putpixel(x + x1, y + y1, WHITE);
+    putpixel(x + x1, y - y1, WHITE);
+    putpixel(x - x1, y + y1, WHITE);
+    putpixel(x - x1, y - y1, WHITE);
+    putpixel(x + y1, y + x1, WHITE);
+    putpixel(x - y1, y + x1, WHITE);
+    putpixel(x + y1, y - x1, WHITE);
+    putpixel(x - y1, y - x1, WHITE);
 }
 
-int main() {
-    int gdriver = DETECT, gmode;
-    int xc, yc, x, y;
-    float p, r;
-    printf("Enter center coordinates: ");
-    scanf("%d,%d", &xc, &yc);
-    printf("Enter the radius: ");
-    scanf("%f", &r);
+void MidpointCircle(int xc, int yc, int r) {
+    int x, y, gdriver = DETECT, gmode;
+    float p;
     initgraph(&gdriver, &gmode, NULL);
     x = 0;
     y = r;
@@ -41,4 +36,8 @@ int main() {
         plots(xc, yc, x, y);
     getch();
     closegraph();
+}
+
+int main() {
+    MidpointCircle(200, 200, 50);
 }
