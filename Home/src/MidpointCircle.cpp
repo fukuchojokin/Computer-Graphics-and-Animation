@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
-#include <stdlib.h>
 #include <graphics.h>
 
 void plots(int x, int y, int x1, int y1) {

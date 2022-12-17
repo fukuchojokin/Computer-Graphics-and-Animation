@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <math.h>
 #include <graphics.h>
+
 void DDA(int x1, int y1, int x2, int y2) {
     int gdriver = DETECT, gmode;
     initgraph(&gdriver, &gmode, NULL);
