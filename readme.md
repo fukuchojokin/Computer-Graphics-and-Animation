@@ -4,4 +4,4 @@
     - ### Output will be put in `Home/build`
     - ### Open the exe files in `Home/build` to run the program
 
-`Note: Initialize graph only after taking in all the required values`
+`Note: Initialize graph only after taking in all of the required values`
