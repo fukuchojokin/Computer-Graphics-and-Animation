@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <conio.h>
 #include <graphics.h>
+#include <stdio.h>
 
 void plots(int x, int y, int x1, int y1) {
     putpixel(x + x1, y + y1, WHITE);
@@ -30,12 +30,9 @@ void MidpointCircle(int xc, int yc, int r) {
         }
         x++;
     } while (x < y);
-    if (x == y)
-        plots(xc, yc, x, y);
+    if (x == y) plots(xc, yc, x, y);
     getch();
     closegraph();
 }
 
-int main() {
-    MidpointCircle(200, 200, 50);
-}
+int main() { MidpointCircle(200, 200, 50); }

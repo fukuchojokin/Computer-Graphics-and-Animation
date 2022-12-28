@@ -1,7 +1,7 @@
-#include <stdio.h>
 #include <conio.h>
-#include <math.h>
 #include <graphics.h>
+#include <math.h>
+#include <stdio.h>
 
 void DDA(int x1, int y1, int x2, int y2) {
     int gdriver = DETECT, gmode;
@@ -20,6 +20,4 @@ void DDA(int x1, int y1, int x2, int y2) {
     closegraph();
 }
 
-int main() {
-    DDA(20,20, 90,90); 
-}
+int main() { DDA(20, 20, 90, 90); }

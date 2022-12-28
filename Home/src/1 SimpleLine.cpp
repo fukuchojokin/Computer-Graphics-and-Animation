@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <conio.h>
 #include <graphics.h>
+#include <stdio.h>
 
 int main() {
     int gdriver = DETECT, gmode;
