@@ -1,4 +1,4 @@
-# Copy [`MinGW`](https://sourceforge.net/projects/mingw/) folder to `C:\MinGW`
+# Copy [`MinGW`](https://sourceforge.net/projects/mingw/) folder to MINGW install locationm might be `C:\MINGW`
 - ## Put your code in `Home/src`
 - ## Use `Ctrl+Shift+B` to build.
     - ### Output will be put in `Home/build`
