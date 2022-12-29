@@ -8,7 +8,6 @@
         "args": ["-g",
                  "${file}",
                  "-o", 
-                //  "${fileDirname}\\${fileBasenameNoExtension}.exe",
                  "${workspaceFolder}\\Home\\build\\${fileBasenameNoExtension}.exe",
                  "-lbgi",
                  "-lgdi32",

@@ -18,12 +18,10 @@ void bezier(int x[4], int y[4]) {
     for (i = 0; i < 4; i++) putpixel(x[i], y[i], YELLOW);
     getch();
     closegraph();
-    return;
 }
 int main() {
     int x[4], y[4];
-    int i;
-    printf("Enter the x- and y-coordinates of the four control points.\n");
-    for (i = 0; i < 4; i++) scanf("%d%d", &x[i], &y[i]);
+    x[0] = 25, x[1] = 55, x[2] = 65, x[3] = 85;
+    y[0] = 35, y[1] = 26, y[2] = 55, y[3] = 55;
     bezier(x, y);
 }
