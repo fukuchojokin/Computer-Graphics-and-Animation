@@ -1,0 +1,14 @@
+1. Write a C program for basic intro to graphics library.
+2. Write a C program for drawing a line using DDA Line drawing algorithm.
+3. Write a C program for drawing a line using Bresenham Line drawing algorithm.
+4. Write a C program for drawing a circle using Midpoint Circle algorithm.
+5. Write a C program for drawing a cirle using Bresenham Circle drawing algorithm.
+6. Write a C program for determining the basic transformation (translation, rotation, scaling) using switch case.
+7. Write a C program for clipping a line using Cohen Sutherland Line Clipping algorithm.
+8. Write a C program for transforming a 2D object triangle using Shear Transformation.
+9. Write a C program for 2D translation of a line.
+10. Write a C program for 2D Rotation of a line.
+11. Write a C program for 2D Scaling of a line.
+12. Write a C program to draw a car using graphics library which drives from left to right of display.
+13. Write a C program for drawing a Polygon using graphics library using vertex.
+14. Write a C program for drawing a curve using Bezier Curve.

@@ -4,6 +4,6 @@
     - ### Output will be put in `Home/build`
     - ### Open the exe files in `Home/build` to run the program
 
-`Note: Initialize graph only after taking in all of the required values`
+`Note: call the initgraph function only after taking in all of the required values`
 
-[Reference](https://github.com/ullaskunder3/Solution-to-graphics.h)
+[Reference for environment](https://github.com/ullaskunder3/Solution-to-graphics.h)
