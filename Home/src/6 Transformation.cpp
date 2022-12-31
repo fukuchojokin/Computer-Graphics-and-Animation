@@ -2,7 +2,7 @@
 #include <graphics.h>
 #include <math.h>
 #include <stdio.h>
-int gdriver = DETECT, gmode;
+
 void translate(int x1, int x2, int x3, int y1, int y2, int y3, int xt, int yt) {
     setcolor(YELLOW);
     line(x1, y1, x2, y2);
@@ -45,7 +45,9 @@ void scale(int x1, int x2, int x3, int y1, int y2, int y3, int sx, int sy) {
     line(x3, y3, x1, y1);
     getch();
 }
+
 int main() {
+    int gdriver = DETECT, gmode;
     initgraph(&gdriver, &gmode, NULL);
     translate(100, 10, 10, 200, 50, 200, 20, 20);
     cleardevice();
