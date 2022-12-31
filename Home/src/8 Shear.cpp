@@ -23,4 +23,4 @@ void shear(int x, int y, int x1, int y1, int x2, int y2, int x3, int y3,
     closegraph();
 }
 
-int main() { shear(10, 10, 10, 100, 50, 100, 50, 10, 2); }
+int main() { shear(100, 100, 200, 150, 50, 100, 50, 10, 2); }

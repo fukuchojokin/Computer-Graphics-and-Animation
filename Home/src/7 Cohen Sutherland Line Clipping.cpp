@@ -98,7 +98,7 @@ int main() {
     rectangle(W_xmin, W_ymin, W_xmax, W_ymax);
     // line(0, 0, 600, 0);
     // line(0, 0, 0, 600);
-    setcolor(CYAN);
+    setcolor(WHITE);
     line(x, y, x1, y1);
     getch();
     closegraph();

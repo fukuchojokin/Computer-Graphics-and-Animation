@@ -54,6 +54,5 @@ int main() {
     rotate(100, 10, 10, 200, 50, 200, 50);
     cleardevice();
     scale(100, 10, 10, 200, 50, 200, 2, 2);
-    cleardevice();
     closegraph();
 }
