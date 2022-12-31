@@ -1,5 +1,4 @@
 #include <conio.h>
-#include <direct.h>
 #include <graphics.h>
 #include <math.h>
 #include <stdio.h>
@@ -8,13 +7,11 @@ int main() {
         region_code[4];
     int W_xmax = 400, W_ymax = 400, W_xmin = 50, W_ymin = 50, flag = 0;
     float slope;
-    int x = 10, y = 10, x1 = 275, y1 = 275, i, xc, yc;
+    int x = 10, y = 10, x1 = 400, y1 = 300, i, xc, yc;
     int gdriver = DETECT, gmode;
     initgraph(&gdriver, &gmode, NULL);
     rectangle(W_xmin, W_ymin, W_xmax, W_ymax);
     line(x, y, x1, y1);
-    // line(0, 0, 600, 0);
-    // line(0, 0, 0, 600);
     if (y > W_ymax) {
         rcode_begin[0] = 1;
         flag = 1;
@@ -47,10 +44,7 @@ int main() {
         rcode_end[3] = 1;
         flag = 1;
     }
-    if (flag == 0) {
-        printf("No need of clipping as it is already in window\n");
-    }
-    flag = 1;
+    if (flag == 0) printf("No need of clipping as it is already in window\n");
     for (i = 0; i < 4; i++) {
         region_code[i] = rcode_begin[i] && rcode_end[i];
         if (region_code[i] == 1) flag = 0;
@@ -67,19 +61,21 @@ int main() {
             y = y + (float)(W_xmax - x) * slope;
             x = W_xmax;
         }
+
         if (rcode_begin[0] == 1 && rcode_begin[1] == 0) {
             x = x + (float)(W_ymax - y) / slope;
             y = W_ymax;
         }
+
         if (rcode_begin[0] == 0 && rcode_begin[1] == 1) {
             x = x + (float)(W_ymin - y) / slope;
             y = W_ymin;
         }
-
         if (rcode_end[2] == 0 && rcode_end[3] == 1) {
             y1 = y1 + (float)(W_xmin - x1) * slope;
             x1 = W_xmin;
         }
+
         if (rcode_end[2] == 1 && rcode_end[3] == 0) {
             y1 = y1 + (float)(W_xmax - x1) * slope;
             x1 = W_xmax;
@@ -96,8 +92,6 @@ int main() {
     getch();
     clearviewport();
     rectangle(W_xmin, W_ymin, W_xmax, W_ymax);
-    // line(0, 0, 600, 0);
-    // line(0, 0, 0, 600);
     setcolor(WHITE);
     line(x, y, x1, y1);
     getch();
