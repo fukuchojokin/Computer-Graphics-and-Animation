@@ -9,21 +9,21 @@ void BresenhamCircle(int xc, int yc, int r) {
     x = 0;
     y = r;
     while (x <= y) {
-        putpixel(x + xc, y + yc, YELLOW);
-        putpixel(x + xc, -y + yc, YELLOW);
-        putpixel(-x + xc, -y + yc, YELLOW);
-        putpixel(-x + xc, y + yc, YELLOW);
-        putpixel(y + xc, x + yc, YELLOW);
-        putpixel(y + xc, -x + yc, YELLOW);
-        putpixel(-y + xc, -x + yc, YELLOW);
-        putpixel(-y + xc, x + yc, YELLOW);
+        putpixel(x + xc, y + yc, WHITE);
+        putpixel(x + xc, -y + yc, WHITE);
+        putpixel(-x + xc, -y + yc, WHITE);
+        putpixel(-x + xc, y + yc, WHITE);
+        putpixel(y + xc, x + yc, WHITE);
+        putpixel(y + xc, -x + yc, WHITE);
+        putpixel(-y + xc, -x + yc, WHITE);
+        putpixel(-y + xc, x + yc, WHITE);
         if (d <= 0) {
-            x = x + 1;
-            d = d + 4 * x + 6;
+            x++;
+            d += 4 * x + 6;
         } else {
-            x = x + 1;
-            y = y - 1;
-            d = d + 4 * (x - y) + 10;
+            x++;
+            y--;
+            d += 4 * (x - y) + 10;
         }
     }
     getch();

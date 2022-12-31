@@ -2,5 +2,6 @@
     "python.formatting.provider": "black",
     "files.associations": {
         "cmath": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

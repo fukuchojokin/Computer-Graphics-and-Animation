@@ -3,24 +3,19 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-int main() {
-    int graphdriver = DETECT, graphmode, errorcode;
-    int i;
-    int x2, y2, x1, y1, x, y;
-    printf("Enter the 2 line end points:");
-    printf("x1,y1,x2,y2");
-    scanf("%d%d%d%d", &x1, &y1, &x2, &y2);
-    initgraph(&graphdriver, &graphmode, NULL);
+
+void scale2D(int x1, int y1, int x2, int y2, int sx, int sy) {
     line(x1, y1, x2, y2);
-    printf("Enter scaling co-ordinates ");
-    printf("x,y");
-    scanf("%d%d", &x, &y);
-    x1 = (x1 * x);
-    y1 = (y1 * y);
-    x2 = (x2 * x);
-    y2 = (y2 * y);
-    printf("Line after scaling");
+    x1 = (x1 * sx);
+    y1 = (y1 * sy);
+    x2 = (x2 * sx);
+    y2 = (y2 * sy);
     line(x1, y1, x2, y2);
     getch();
+}
+int main() {
+    int gdriver = DETECT, gmode;
+    initgraph(&gdriver, &gmode, NULL);
+    scale2D(100, 100, 200, 100, 2, 2);
     closegraph();
 }
