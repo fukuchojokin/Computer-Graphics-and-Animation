@@ -5,7 +5,7 @@
 5. WAP for drawing a cirle using Bresenham Circle drawing algorithm.
 6. WAP for determining the basic transformation (translation, rotation, scaling).
 7. WAP for clipping a line using Cohen Sutherland Line Clipping algorithm.
-8. WAP for transforming a 2D object triangle using Shear Transformation.
+8. WAP for transforming a 2D object using Shear Transformation.
 9. WAP for 2D translation of a line.
 10. WAP for 2D Rotation of a line.
 11. WAP for 2D Scaling of a line.
