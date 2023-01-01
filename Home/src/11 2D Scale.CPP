@@ -1,8 +1,6 @@
 #include <conio.h>
 #include <graphics.h>
-#include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 void scale2D(int x1, int y1, int x2, int y2, int sx, int sy) {
     line(x1, y1, x2, y2);
